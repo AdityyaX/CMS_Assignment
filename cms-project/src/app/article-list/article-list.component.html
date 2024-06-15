@@ -1,0 +1,10 @@
+<!-- article-list.component.html -->
+<div>
+    <h2>Article List</h2>
+    <ul>
+      <li *ngFor="let article of articles">
+        <a [routerLink]="['/article', article.id]">{{ article.title }}</a>
+      </li>
+    </ul>
+    <button routerLink="/article/create">Create New Article</button>
+  </div>

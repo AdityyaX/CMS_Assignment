@@ -1,0 +1,6 @@
+<!-- article-details.component.html -->
+<div *ngIf="article">
+    <h2>{{ article.title }}</h2>
+    <p>{{ article.content }}</p>
+    <button routerLink="/article/{{ article.id }}/edit">Edit Article</button>
+  </div>
